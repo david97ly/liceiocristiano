@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.90">
+    <meta name="google" content="notranslate">
+    <title>Document</title>
+
+    {% load static from staticfiles %}
+
+    <link rel="stylesheet" href="{% static "css/encuesta.css" %}">
+  
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+  <div class="titulo">
+     <img src="/static/img/logoliceo.jpeg" alt=""> <h4 class="letra">
+      <P>LICEO CRISTIANO
+      LICENCIADO JOAQUIN EDGARDO GARCIA LEMUS.</P>
+
+        <p>
+   Final Calle 3 de mayo contigo al casco de la acienda
+       Barrio San Jose, Canto Cara Sucia, Tel: 2484-2173 o 2437-0650
+        </p>
+    
+
+     </h4> <img src="/static/img/ministerio.png" alt="">
+  </div>
+    
+    <div class="contenedor-formulario">
+     <h6 class="texto">
+        Apreciable estudiante, el propósito de la presente encuesta es para medir la 
+        cantidad de personas que desean continuar sus estudios universitarios, y al mismo tiempo
+        considerar la importancia y los beneficios de tener una Universdidad en Cara Sucia, pues hacemos 
+        de su conocimiento que como Liceo Cristiano, estamos trabajando en un proyecto con el fin de que
+        se dé apertura de una Universdidad en nuestro Colegio, que ofrezca carreras universitarias en horario nocturno y sabatino.
+        <br>
+        Por tal razón, su opinion es de mucha importancia para lograr dicho proyecto, por lo que pedimos
+        su colaboración al llenar esta encuesta, y que lo haga responsable y cuidadosamente.
+      </h6>
+		<div class="wrap">
+      
+     
+  <form class="formulario" name="formulario_registro" method="post">
+        {% csrf_token %}
+    
+
+      <fieldset class="sino">
+  
+      <div class="input-group checkbox">
+       <h4>¿Desea estudiar una carrera universitaria? </h4>
+        {{ form.estudiar }}
+        {{ form.estudiar.errors }}
+        <label for="estudiar">SI</label>
+
+        <input type="checkbox" name="estudio" id="noestudiar" >
+        <label for="noestudiar">NO</label>
+
+      </div>
+
+      <div class="input-group checkbox">
+        <h4>¿Cree que usted seria beneficiado si existe una Universidad en Cara Sucia? </h4>
+          {{ form.veneficiario }}
+          {{ form.veneficiario.errors }}
+          <label for="beneficiario">SI</label>
+
+          <input type="checkbox" name="beneficio" id="nobeneficiario" >
+           <label for="nobeneficiario">NO</label>
+      </div>
+</fieldset>
+
+
+<fieldset>
+ 
+    <h4 class="carreras">A continuación le presentamos el listado de las carreras universitarias que ofertaría la 
+      Universdidad en Cara Sucia, porfavor lea cada una de ellas y seleccione unaLarua. </h4>
+      <div class="input-group checkbox">
+       
+        {{ form.profesorado }}
+        {{ form.profesorado.errors }}
+        <label for="profesorado">Profesorado y Licenciatura en Educacion Inicial y Parvularia</label>
+
+      </div>
+
+       <div class="input-group checkbox">
+       
+        {{ form.comunicaciones }}
+        {{ form.comunicaciones.errors }}
+        <label for="comunicaciones">Licenciatura en Ciencias de la Comunicación</label>
+
+      </div>
+
+       <div class="input-group checkbox">
+       
+        {{ form.administracion }}
+        {{ form.administracion.errors }}
+        <label for="administracion">Licenciatura en Administración de Empresas</label>
+
+      </div>
+
+       <div class="input-group checkbox">
+       
+        {{ form.contaduria }}
+        {{ form.contaduria.errors }}
+        <label for="contaduria">Licenciatura en Contaduría Pública</label>
+
+      </div>
+
+       <div class="input-group checkbox">
+       
+        {{ form.computacion }}
+        {{ form.computacion.errors }}
+        <label for="computacion">Ingenieria en Ciencias de la Computación</label>
+
+      </div>
+
+       <div class="input-group checkbox">
+       
+        {{ form.juridica }}
+        {{ form.juridica.errors }}
+        <label for="juridica">Licenciatura en Jurisprudencia y Ciencias Sociales (Abogado/a)</label>
+
+      </div>
+
+       <div class="input-group checkbox">
+       
+        {{ form.teologia }}
+        {{ form.teologia.errors }}
+        <label for="teologia">Licenciatura en Teologia (Biblia)</label>
+
+      </div>
+</fieldset>
+
+      <fieldset>
+           <h4 class="carreras">Por favor escriba los datos personales que le pedimos para poder contactarle cuando se aperturen
+             las matriculas en la Universdidad en Cara Sucia. </h4>
+       <div class="input-group">
+       
+        {{ form.nombre }}
+        {{ form.nombre.errors }}
+        <label class="label" for="nombre">Nombre</label>
+
+      </div>
+       <div class="input-group">
+       
+        {{ form.telefono }}
+        {{ form.telefono.errors }}
+        <label class="label" for="telefono">Telefono</label>
+
+      </div>
+       <div class="input-group">
+       
+        {{ form.institucion_actual }}
+        {{ form.institucion_actual.errors }}
+        <label class="label" for="institucion_actual">Colegio donde estudia/io</label>
+      </div>
+
+       <div class="input-group">
+       
+        {{ form.comentario }}
+        {{ form.comentario.errors }}
+         
+      </div>
+</fieldset>
+
+
+  <!--    <input class="session" type="submit" value="Iniciar Sesion">-->
+        <input type="submit" id="btn-submit" value="Enviar Encuesta">
+ </form>
+
+    </div>
+    </div>
+
+  <script src="{% static "js/encuesta.js" %}"></script>
+<script>
+
+$( document ).ready(function() {
+    $("#beneficiario").click(
+            
+			function() {
+				$("#nobeneficiario").attr('checked', false);
+			}
+		);
+
+     $("#nobeneficiario").click(
+		function() {
+			$("#beneficiario").attr('checked', false);
+		}
+	);
+
+
+
+    $("#estudiar").click(
+            
+			function() {
+				$("#noestudiar").attr('checked', false);
+			}
+		);
+
+     $("#noestudiar").click(
+		function() {
+			$("#estudiar").attr('checked', false);
+		}
+	);
+});
+
+</script>
+
+</body>
+</html>

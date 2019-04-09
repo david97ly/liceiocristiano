@@ -1,0 +1,596 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #e7eaf6/*#a0e9ff*/;
+}
+
+.oferta{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+.logos h3{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    /*text-shadow: 0px 5px 8px rgba(0,0,0,0.3);*/
+}
+
+.grados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /*background:tomato;*/
+}
+
+.palvu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px 0px;
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    /*border-top: 1px solid black;*/
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+}
+
+.basi{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px 0px;
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    /*border-top: 1px solid black;*/
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+}
+
+.media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px 0px;
+    /*background-color: rgba(0, 0, 0, 0.1);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;*/
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+}
+
+.palvu:hover{
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.35);  
+}
+.basi:hover{
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.35);  
+}
+.media:hover{
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.35);  
+}
+.logos:hover{
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.35);  
+}
+
+.palvu .infoimg img{
+    width: 300px;
+}
+
+.basi .infoimg img{
+    width: 300px;
+}
+
+.media .infoimg img{
+    width: 300px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0px 0px;
+    /*background-color: azure;*/
+}
+
+.infoimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0px 0px;
+    /*background-color: azure;*/
+}
+
+.ptitu{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px 0px;
+    text-align: center;
+    padding: 0px 20px;
+    /*text-shadow: 0px 5px 8px rgba(0,0,0,0.3);*/
+}
+
+.pinfo{
+    font-size: 25px;
+    margin: 5px 0px;
+    text-align: center;
+    padding: 0px 20px;
+   /* text-shadow: 0px 5px 8px rgba(0,0,0,0.3);*/
+}
+
+.paja{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: rgba(255, 255, 255, 0.308);*/
+    width: 80%;
+    /*box-shadow: 0px 5px 8px rgba(0,0,0,0.3);
+    padding: 30px;
+    border-radius: 20px;*/
+}
+
+.vision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px 0px;  
+    /*background: white;
+    box-shadow: 0px 5px 8px rgba(0,0,0,0.3);
+    padding: 30px;
+    border-radius: 20px;*/
+}
+
+.vision div{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 5px 0px;
+    background: -moz-linear-gradient(45deg, rgba(188,74,255,1) 0%, rgba(4,51,255,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(188,74,255,1)), color-stop(100%, rgba(4,51,255,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(45deg, rgba(188,74,255,1) 0%, rgba(4,51,255,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(45deg, rgba(188,74,255,1) 0%, rgba(4,51,255,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(45deg, rgba(188,74,255,1) 0%, rgba(4,51,255,1) 100%); /* ie10+ */
+    background: linear-gradient(45deg, rgba(188,74,255,1) 0%, rgba(4,51,255,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0433ff', endColorstr='#bc4aff',GradientType=1 ); /* ie6-9 */
+    color: white;
+}
+
+
+.vision p{
+    text-align: center;
+    margin: 5px 0px;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding: 20px;
+}
+
+.logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+}
+
+.logos img{
+    width: 150px;
+    margin: 0px 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: rgb(71, 70, 71);
+}
+
+.footer img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.footer p{
+    color: white;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 850px){
+
+.vision div{
+font-size: 20px;
+}
+
+.vision p{
+    font-size: 20px;
+}
+
+
+.ptitu{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0px;
+    text-align: center;
+    padding: 0px 20px;
+    /*text-shadow: 0px 5px 8px rgba(0,0,0,0.3);*/
+}
+
+.pinfo{
+    font-size: 20px;
+    margin: 5px 0px;
+    text-align: center;
+    padding: 0px 20px;
+   /* text-shadow: 0px 5px 8px rgba(0,0,0,0.3);*/
+}
+
+.palvu .infoimg img{
+    width: 200px;
+}
+
+.basi .infoimg img{
+    width: 200px;
+}
+
+.media .infoimg img{
+    width: 200px;
+}
+
+.logos img{
+    width: 120px;
+    margin: 0px 20px;
+}
+
+.logos h3{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    /*text-shadow: 0px 5px 8px rgba(0,0,0,0.3);*/
+}
+
+
+}
+
+@media screen and (max-width: 700px){
+ 
+
+    .vision div{
+        font-size: 16px;
+        }
+        
+        .vision p{
+            font-size: 16px;
+        }
+        
+        
+        .ptitu{
+            font-size: 16px;
+            font-weight: bold;
+            margin: 5px 0px;
+            text-align: center;
+            padding: 0px 20px;
+            /*text-shadow: 0px 5px 8px rgba(0,0,0,0.3);*/
+        }
+        
+        .pinfo{
+            font-size: 16px;
+            margin: 5px 0px;
+            text-align: center;
+            padding: 0px 20px;
+           /* text-shadow: 0px 5px 8px rgba(0,0,0,0.3);*/
+        }
+        
+        .palvu .infoimg img{
+            width: 160px;
+        }
+        
+        .basi .infoimg img{
+            width: 160px;
+        }
+        
+        .media .infoimg img{
+            width: 160px;
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            padding: 0px 0px;
+            /*background-color: azure;*/
+        }
+        
+        .infoimg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            padding: 0px 0px;
+            /*background-color: azure;*/
+        }
+        
+        .logos img{
+            width: 100px;
+            margin: 0px 20px;
+        }
+
+        .logos h3{
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            /*text-shadow: 0px 5px 8px rgba(0,0,0,0.3);*/
+        }
+
+
+}
+
+@media screen and (max-width: 575px){
+ 
+    .vision {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .vision div{
+        font-size: 16px;
+        }
+        
+        .vision p{
+            font-size: 16px;
+        }
+        
+        
+        .ptitu{
+            font-size: 16px;
+            font-weight: bold;
+            margin: 5px 0px;
+            text-align: center;
+            padding: 0px 20px;
+            /*text-shadow: 0px 5px 8px rgba(0,0,0,0.3);*/
+        }
+        
+        .pinfo{
+            font-size: 16px;
+            margin: 5px 0px;
+            text-align: center;
+            padding: 0px 20px;
+           /* text-shadow: 0px 5px 8px rgba(0,0,0,0.3);*/
+        }
+        
+        .palvu .infoimg img{
+            width: 130px;
+        }
+        
+        .basi .infoimg img{
+            width: 130px;
+        }
+        
+        .media .infoimg img{
+            width: 130px;
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width:65%;
+            padding: 0px 0px;
+            /*background-color: azure;*/
+        }
+        
+        .infoimg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35%;
+            padding: 0px 0px;
+            /*background-color: azure;*/
+        }
+        
+        .logos img{
+            width: 100px;
+            margin: 0px 20px;
+        }
+
+        .logos h3{
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            /*text-shadow: 0px 5px 8px rgba(0,0,0,0.3);*/
+        }
+
+        .oferta{
+            padding: 20px 0px;
+        }
+
+
+}
+
+@media screen and (max-width: 450px){
+ 
+
+    .vision div{
+        font-size: 16px;
+        }
+        
+        .vision p{
+            font-size: 16px;
+        }
+        
+        
+        .ptitu{
+            font-size: 13px;
+            font-weight: bold;
+            margin: 5px 0px;
+            text-align: center;
+            padding: 0px 20px;
+            /*text-shadow: 0px 5px 8px rgba(0,0,0,0.3);*/
+        }
+        
+        .pinfo{
+            font-size: 13px;
+            margin: 5px 0px;
+            text-align: center;
+            padding: 0px 20px;
+           /* text-shadow: 0px 5px 8px rgba(0,0,0,0.3);*/
+        }
+        
+        .palvu .infoimg img{
+            width: 120px;
+        }
+        
+        .basi .infoimg img{
+            width: 120px;
+        }
+        
+        .media .infoimg img{
+            width: 120px;
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width:65%;
+            padding: 0px 0px;
+            /*background-color: azure;*/
+        }
+        
+        .infoimg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35%;
+            padding: 0px 0px;
+            /*background-color: azure;*/
+        }
+        
+        .logos img{
+            width: 80px;
+            margin: 0px 20px;
+        }
+
+        .logos h3{
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            /*text-shadow: 0px 5px 8px rgba(0,0,0,0.3);*/
+        }
+
+        .palvu{
+            width: 90%;
+            margin: 10px 0px;
+
+        }
+        
+        .basi{
+            width: 90%;
+            margin: 10px 0px;
+
+        }
+        
+        .media{
+            width: 90%;
+            margin: 10px 0px;
+
+        }
+
+        .vision{
+            width: 90%;
+        }
+
+        .paja{
+            width: 90%;
+        }
+
+        .footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            background: rgb(71, 70, 71);
+        }
+        
+        .footer img{
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+        }
+        
+        .footer p{
+            color: white;
+        }
+        
+        .contacto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            font-size: 14px;
+        }
+        
+
+}
+
+@media screen and (max-width: 400px){
+    .palvu .infoimg img{
+        width: 100px;
+    }
+    
+    .basi .infoimg img{
+        width: 100px;
+    }
+    
+    .media .infoimg img{
+        width: 100px;
+    }
+}
+

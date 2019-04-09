@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Liceo Cristiano</title>
+	<meta name="theme-color" content="#7486eb"/>
+
+	  {% load static from staticfiles %}
+
+	<link rel="stylesheet" href="{% static "css/nivo-slider.css" %}">
+	<link rel="stylesheet" href="{% static "css/mi-slider.css" %}">
+	<link rel="stylesheet" href="{% static "css/style.css" %}">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+	<script src="{% static "js/jquery.nivo.slider.js" %}"></script>
+
+	<script type="text/javascript"> 
+		$(window).on('load', function() {
+		    $('#slider').nivoSlider(); 
+		}); 
+	</script>
+</head>
+<body>
+	<div class="slider-wrapper theme-mi-slider">
+		<div id="slider" class="nivoSlider">     
+		    <img src="/static/img/8.jpg" alt="" title="#htmlcaption1" />    
+		    <img src="/static/img/9.jpg" alt="" title="#htmlcaption2" />    
+		    <img src="/static/img/4.jpg" alt="" title="#htmlcaption3" />     
+		</div> 
+		<div id="htmlcaption1" class="nivo-html-caption">     
+		    
+		</div>
+		<div id="htmlcaption2" class="nivo-html-caption">     
+		    
+		</div>
+		<div id="htmlcaption3" class="nivo-html-caption">     
+		    
+		</div>
+	</div>
+	<div class="oferta">
+		<div class="logos">
+			<img src="/static/img/icons/liceo.png" alt="">
+			<h3>OFERTA ACADEMICA</h3>
+		</div>
+		<div class="grados"> 
+			<div class="palvu">
+					<div class="info">
+						<p class="ptitu">EDUCACIÓN PALVULARIA</p>
+						<p class="pinfo">Sección de cuatro, cinco y seis años.
+						</br>Contamos con un personal docente capacitado y especializado en esta área
+						 para que sus hijos inicien su formación de la mejor manera.</p>
+					</div>
+					<div class="infoimg">
+					<img src="static/img/icons/palvu.png" alt="">	
+					</div>
+			</div>
+			<div class="basi">
+					<div class="infoimg">
+							<img src="static/img/icons/basica.png" alt="">	
+							</div>
+					<div class="info">
+						<p class="ptitu">EDUCACIÓN BÁSICA</p>
+						<p class="pinfo">De primer a noveno grado. </br>
+							Los estudiantes reciben la mejor preparación para que puedan afrontar los obstaculos académicos
+							y los nuevos retos que se le presentan.
+						</p>
+					</div>		
+			</div>
+			<div class="media">
+					<div class="info">
+						<p class="ptitu">EDUCACIÓN MEDIA</p>
+						<p class="pinfo">Contamos con Bachillerato General y Bachillerato Técnico en Contaduría.
+							En esta etapa se le brindan al estudiante herramientas para que pueda superar la prueba PAES y se prepara
+							 con el mejor conocimiento 
+							para la vida universitaria.
+						</p>
+					</div>
+					<div class="infoimg">
+					<img src="static/img/icons/media.png" alt="">	
+					</div>
+			</div>
+		</div>
+		
+
+		<div class="paja">
+				<div class="vision">
+					<div>NUESTRA VISIÓN</div>
+					<P>“Brindar educación de calidad, 
+					reflejando los principios cristianos para llegar a ser la mejor 
+					institución educativa a nivel del Cantón Cara Sucia”</P>
+				</div>
+				<div class="vision">
+					<div>NUESTRA MISIÓN</div>
+					<P>“Ofrecer a niños y jovenes en los 
+					niveles preescolares y básico. Una educación actualizada y 
+					excelente calidad que tenga como fundamento a Jesucristo y que esté en absoluta 
+					correspondencia con la palabra de Dios; para desarrollar de manera integral la personalidad del alumno, ayudandole a 
+					descubrir su 
+					potencial intelectual y 
+					actualizarlo en las innovaciones y adelantos tecnologicos de la ciencia, de manera que le permita desenvolverse con éxito en su medio socio-económico.”
+					</P>
+				</div>
+			</div>
+	</div>
+	<div class="footer">
+		<img src="static/img/icons/liceo.png" alt="">
+		<div class="contacto">
+			<p>TEL: 2484-2173 / 24370650 </p>
+			<p>E-MAIL: liceo21322cs@hotmail.com</p>
+		</div>
+		
+		<img src="static/img/icons/asamblea.png" alt="">
+	</div>
+	
+</body>
+</html>
